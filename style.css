@@ -38,7 +38,7 @@ img {
 }
 
 nav {
-  padding: 10px;
+  padding: 0;
   font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   display: flex;
@@ -224,7 +224,7 @@ form {
   flex-direction: column;
   border-radius: 0.5rem;
   position: fixed;
-  top: 50%;
+  top: 15%;
   right: 3rem;
   background-color: rgb(30, 30, 30);
   color: rgb(190, 190, 190);
@@ -251,6 +251,7 @@ form button {
   background-size: 2rem;
   width: 0;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .form-show {
@@ -337,6 +338,10 @@ input {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 600px) {
+  form {
+    top: 10%;
+    right: 0;
+  }
   .mobile-menu {
     display: flex;
     margin: 0 15px;
