@@ -6,6 +6,111 @@
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: 'Anurati';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Anurati'),
+    url('./assets/fonts/Anurati-Regular.otf') format('truetype');
+}
+
 body {
+  background-color: black;
+}
+
+html,
+body,
+main {
   margin: 0;
+  color: white;
+}
+img {
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-family: 'Anurati', serif;
+  font-size: 72px;
+  opacity: 0;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  animation: fromTop 2s forwards ease-in-out;
+}
+h1 + span {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: larger;
+}
+.planet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+}
+.earth {
+  background-image: url('./assets/images/earth.jpg');
+}
+.moon {
+  background-image: url('./assets/images/moon.jpg');
+}
+.mars {
+  background-image: url('./assets/images/mars.jpg');
+}
+p,
+footer {
+  margin-top: auto;
+  max-width: 30rem;
+  text-align: justify;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+footer {
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+.planet button {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  margin: 1rem 0 3rem;
+  font-weight: 900;
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  animation: fromBottom 2s forwards ease-in-out;
+}
+
+@keyframes fromTop {
+  0% {
+    transform: translateY(-24px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fromBottom {
+  100% {
+    transform: translateY(-24px);
+  }
+  0% {
+    opacity: 1;
+  }
 }
