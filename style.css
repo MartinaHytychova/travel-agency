@@ -226,8 +226,8 @@ form {
   flex-direction: column;
   border-radius: 0.5rem;
   position: fixed;
-  top: 15%;
-  right: 25%;
+  top: 30%;
+  right: 10%;
   background-color: rgb(30, 30, 30);
   color: rgb(190, 190, 190);
   z-index: 1;
