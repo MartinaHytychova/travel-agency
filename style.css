@@ -338,6 +338,10 @@ input {
     display: inline-block;
   }
 
+  nav {
+    padding: 10px 0;
+  }
+
   ul.list {
     display: none;
   }
