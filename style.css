@@ -14,16 +14,20 @@
     url('./assets/fonts/Anurati-Regular.otf') format('truetype');
 }
 
-body {
-  background-color: black;
-  padding: 15px 20px;
-}
-
 html,
 body,
 main {
   margin: 0;
   color: white;
+}
+
+body {
+  background-color: black;
+  padding: 0 20px 20px;
+}
+
+main {
+  margin-top: 100px;
 }
 
 img {
@@ -40,6 +44,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 1;
+  margin-top: -100px;
+  width: 100%;
+}
+@supports (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px)) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
 }
 
 .logo {
@@ -316,6 +331,7 @@ input {
     border: none;
     cursor: pointer;
     background-image: url('./assets/images/icons/menu-open.svg');
+    outline: none;
   }
 
   .open {
