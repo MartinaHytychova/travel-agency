@@ -55,6 +55,7 @@ window.onload = function () {
   }
 
   function formSubmit(event) {
+    event.preventDefault();
     hideFormEarth();
     hideFormMoon();
     hideFormMars();
