@@ -28,6 +28,7 @@ window.onload = function () {
   close.addEventListener('click', hideForm);
 };
 
+// mobile menu
 const items = document.querySelector('#items');
 const menu = document.querySelector('.hamburger');
 menu.addEventListener('click', (e) => {

@@ -328,6 +328,8 @@ input {
 
   ul.opened-list {
     display: flex;
+    background-color: black;
+    border-radius: 5px;
   }
 
   ul.closed-list {
@@ -341,5 +343,12 @@ input {
     right: 0;
     top: 80px;
     z-index: 1;
+  }
+  @supports (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px)) {
+    ul.opened-list {
+      background-color: rgba(0, 0, 0, 0.5);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+    }
   }
 }
