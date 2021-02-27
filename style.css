@@ -97,6 +97,10 @@ footer {
   animation: fromBottom 2s forwards ease-in-out;
 }
 
+.form {
+  display: none;
+}
+
 @keyframes fromTop {
   0% {
     transform: translateY(-24px);
