@@ -16,6 +16,7 @@
 
 body {
   background-color: black;
+  padding: 15px 20px;
 }
 
 html,
@@ -37,7 +38,20 @@ nav {
   font-family: 'Fira Sans', sans-serif;
   text-transform: uppercase;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
 }
 
 nav > ul {
@@ -104,7 +118,7 @@ h1 + span {
   min-height: 100vh;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .earth {
