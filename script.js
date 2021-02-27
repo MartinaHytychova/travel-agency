@@ -1,31 +1,63 @@
 "use strict";
-console.log("mňau");
 
 window.onload = function() {
+  //EARTH
+  //Showing the form
   const earth = document.getElementById("launchEarth");
-  const moon = document.getElementById("launchMoon");
-  const mars = document.getElementById("launchMars");
 
-  //Displaying the form
-  function showForm() {
-    const orderForm = document.getElementById("form");
-
+  function showFormEarth() {
+    const orderForm = document.getElementById("formEarth");
     orderForm.style.display = "block";
   }
 
   //Hiding the form
-  const close = document.getElementById("close");
-
-  function hideForm() {
-    const orderForm = document.getElementById("form");
-
+  const closeEarth = document.getElementById("closeEarth");
+  function hideFormEarth() {
+    const orderForm = document.getElementById("formEarth");
     orderForm.style.display = "none";
   }
 
-  earth.addEventListener("click", showForm);
-  moon.addEventListener("click", showForm);
-  mars.addEventListener("click", showForm);
-  close.addEventListener("click", hideForm);
+  //MOON
+  //Showing the form
+  const moon = document.getElementById("launchMoon");
+
+  function showFormMoon() {
+    const orderForm = document.getElementById("formMoon");
+    orderForm.style.display = "block";
+  }
+
+  //Hiding the form
+  const closeMoon = document.getElementById("closeMoon");
+
+  function hideFormMoon() {
+    const orderForm = document.getElementById("formMoon");
+    orderForm.style.display = "none";
+  }
+
+  //MARS
+  //Showing the form
+  const mars = document.getElementById("launchMars");
+
+  function showFormMars() {
+    const orderForm = document.getElementById("formMars");
+    orderForm.style.display = "block";
+  }
+
+  //Hiding the form
+  const closeMars = document.getElementById("closeMars");
+
+  function hideFormMars() {
+    const orderForm = document.getElementById("formMars");
+    orderForm.style.display = "none";
+  }
+
+  //Calling the functions
+  earth.addEventListener("click", showFormEarth);
+  moon.addEventListener("click", showFormMoon);
+  mars.addEventListener("click", showFormMars);
+  closeEarth.addEventListener("click", hideFormEarth);
+  closeMoon.addEventListener("click", hideFormMoon);
+  closeMars.addEventListener("click", hideFormMars);
 };
 
 // mobile menu
