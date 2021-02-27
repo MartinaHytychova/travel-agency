@@ -1,7 +1,6 @@
 "use strict";
 
 window.onload = function() {
-
   //EARTH
   //Showing the form
   const earth = document.getElementById("launchEarth");
@@ -12,10 +11,14 @@ window.onload = function() {
     orderForm.style.display = "block";
   }
 
-  function formSubmit(event){
-   let pin = parseInt((Math.random() * 1000000));
-     alert("Congratulations, you has been successfully registrated. You PIN is: " + pin + ".");
-   }
+  function formSubmit(event) {
+    let pin = parseInt(Math.random() * 1000000);
+    alert(
+      "Congratulations, you has been successfully registrated. You PIN is: " +
+        pin +
+        "."
+    );
+  }
 
   //Hiding the form
   const closeEarth = document.getElementById("closeEarth");
@@ -23,7 +26,6 @@ window.onload = function() {
     const orderForm = document.getElementById("formEarth");
     orderForm.style.display = "none";
   }
-
 
   //MOON
   //Showing the form
@@ -35,11 +37,14 @@ window.onload = function() {
     orderForm.style.display = "block";
   }
 
-  function formSubmit(event){
-   let pin = parseInt((Math.random() * 1000000));
-     alert("Congratulations, you has been successfully registrated. You PIN is: " + pin + ".");
-   }
-
+  function formSubmit(event) {
+    let pin = parseInt(Math.random() * 1000000);
+    alert(
+      "Congratulations, you has been successfully registrated. You PIN is: " +
+        pin +
+        "."
+    );
+  }
 
   //Hiding the form
   const closeMoon = document.getElementById("closeMoon");
@@ -59,10 +64,14 @@ window.onload = function() {
     orderForm.style.display = "block";
   }
 
-  function formSubmit(event){
-   let pin = parseInt((Math.random() * 1000000));
-     alert("Congratulations, you has been successfully registrated. You PIN is: " + pin + ".");
-   }
+  function formSubmit(event) {
+    let pin = parseInt(Math.random() * 1000000);
+    alert(
+      "Congratulations, you has been successfully registrated. You PIN is: " +
+        pin +
+        "."
+    );
+  }
 
   //Hiding the form
   const closeMars = document.getElementById("closeMars");
@@ -83,8 +92,6 @@ window.onload = function() {
   closeMoon.addEventListener("click", hideFormMoon);
   closeMars.addEventListener("click", hideFormMars);
 };
-
-
 
 // mobile menu
 const items = document.querySelector("#items");
