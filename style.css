@@ -30,6 +30,41 @@ img {
   min-width: 100%;
   min-height: 100%;
 }
+address {
+  font-family: 'Fira Sans', sans-serif;
+}
+nav {
+  padding: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+ul li {
+  padding: 0 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+a::after {
+  position: absolute;
+  content: '';
+  border-bottom: 2px solid white;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  border: none;
+}
+a:hover:after {
+  border-bottom: 2px solid white;
+  animation: fromLeft 2s forwards ease-in-out;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -42,10 +77,15 @@ h1 {
   opacity: 0;
   text-align: center;
   margin-bottom: 0.5rem;
-  animation: fromTop 2s forwards ease-in-out;
+  animation: fromTop 1s forwards ease-in-out;
 }
 h1 + span {
   font-family: 'Fira Sans', sans-serif;
+  font-size: larger;
+}
+
+h2 {
+  font-family: 'Anurati', serif;
   font-size: larger;
 }
 .planet {
@@ -112,5 +152,13 @@ footer {
   }
   0% {
     opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
   }
 }
