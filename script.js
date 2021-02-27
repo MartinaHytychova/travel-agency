@@ -58,11 +58,6 @@ window.onload = function () {
   closeEarth.addEventListener('click', hideFormEarth);
   closeMoon.addEventListener('click', hideFormMoon);
   closeMars.addEventListener('click', hideFormMars);
-
-  earth.addEventListener('click', showForm);
-  moon.addEventListener('click', showForm);
-  mars.addEventListener('click', showForm);
-  close.addEventListener('click', hideForm);
 };
 
 // mobile menu
