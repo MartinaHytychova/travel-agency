@@ -162,9 +162,16 @@ footer {
   100% {
   }
 }
-#form {
+#formEarth {
   display: none;
 }
+#formMars {
+  display: none;
+}
+#formMoon {
+  display: none;
+}
+
 form {
   padding: 3rem;
   display: flex;
@@ -180,13 +187,16 @@ form button {
   margin-top: 2rem;
   margin-bottom: 0;
 }
-#close {
+#closeEarth,
+#closeMoon,
+#closeMars {
   background-color: rgb(30, 30, 30);
   background-image: url("assets/images/close.png");
   background-repeat: no-repeat;
   background-size: 2rem;
   width: 0;
   cursor: pointer;
+  float: right;
 }
 .form-show {
   display: flex;
