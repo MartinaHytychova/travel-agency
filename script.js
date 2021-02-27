@@ -16,6 +16,7 @@ window.onload = function () {
   function hideFormEarth() {
     const orderForm = document.getElementById('formEarth');
     orderForm.style.display = 'none';
+    formE.reset();
   }
 
   //MOON
@@ -34,6 +35,7 @@ window.onload = function () {
   function hideFormMoon() {
     const orderForm = document.getElementById('formMoon');
     orderForm.style.display = 'none';
+    formM.reset();
   }
 
   //MARS
@@ -52,6 +54,7 @@ window.onload = function () {
   function hideFormMars() {
     const orderForm = document.getElementById('formMars');
     orderForm.style.display = 'none';
+    formMa.reset();
   }
 
   function formSubmit(event) {
