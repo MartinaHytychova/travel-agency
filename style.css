@@ -7,11 +7,11 @@
 }
 
 @font-face {
-  font-family: 'Anurati';
+  font-family: "Anurati";
   font-style: normal;
   font-weight: normal;
-  src: local('Anurati'),
-    url('./assets/fonts/Anurati-Regular.otf') format('truetype');
+  src: local("Anurati"),
+    url("./assets/fonts/Anurati-Regular.otf") format("truetype");
 }
 
 body {
@@ -37,7 +37,7 @@ header {
   justify-content: center;
 }
 h1 {
-  font-family: 'Anurati', serif;
+  font-family: "Anurati", serif;
   font-size: 72px;
   opacity: 0;
   text-align: center;
@@ -45,7 +45,7 @@ h1 {
   animation: fromTop 2s forwards ease-in-out;
 }
 h1 + span {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: larger;
 }
 .planet {
@@ -58,20 +58,20 @@ h1 + span {
   background-size: contain; /* Resize the background image to cover the entire container */
 }
 .earth {
-  background-image: url('./assets/images/earth.jpg');
+  background-image: url("./assets/images/earth.jpg");
 }
 .moon {
-  background-image: url('./assets/images/moon.jpg');
+  background-image: url("./assets/images/moon.jpg");
 }
 .mars {
-  background-image: url('./assets/images/mars.jpg');
+  background-image: url("./assets/images/mars.jpg");
 }
 p,
 footer {
   margin-top: auto;
   max-width: 30rem;
   text-align: justify;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 100;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 2rem;
@@ -90,14 +90,14 @@ footer {
   border: none;
   margin: 1rem 0 3rem;
   font-weight: 900;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
   animation: fromBottom 2s forwards ease-in-out;
 }
 
-.form {
+#form {
   display: none;
 }
 

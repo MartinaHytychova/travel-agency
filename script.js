@@ -1,16 +1,17 @@
-'use strict';
-console.log('mňau');
+"use strict";
+console.log("mňau");
 
-$(function() {
+window.onload = function() {
+  const earth = document.getElementById("launchEarth");
 
-  // contact form animations
-  $('button').click(function() {
-    $('.form').fadeToggle();
-  })
-  $(document).mouseup(function (e) {
-    var container = $(".form");
+  function showForm() {
+    var x = document.getElementById("form");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
-        container.fadeOut();
-  });
-
-});
+  earth.addEventListener("click", showForm);
+};
