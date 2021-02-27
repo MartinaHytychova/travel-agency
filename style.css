@@ -162,16 +162,11 @@ footer {
   100% {
   }
 }
-#formEarth {
-  display: none;
-}
+#formEarth,
+#formMoon,
 #formMars {
   display: none;
 }
-#formMoon {
-  display: none;
-}
-
 form {
   padding: 3rem;
   display: flex;
@@ -196,7 +191,6 @@ form button {
   background-size: 2rem;
   width: 0;
   cursor: pointer;
-  float: right;
 }
 .form-show {
   display: flex;
